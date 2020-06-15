@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>farsight-wm</groupId>
+	<artifactId>is-package-maven-plugin</artifactId>
+
+	<packaging>maven-plugin</packaging>
+
+	<version>1.0.0</version>
+	<name>farsight-wm:is-package-maven-plugin</name>
+	<url>https://github.com/farsight-wm/is-package-maven-plugin</url>
+
+	<issueManagement>
+		<url>https://github.com/farsight-wm/parent/is-package-maven-plugin</url>
+		<system>GitHub.com</system>
+	</issueManagement>
+
+	<scm>
+		<url>https://github.com/farsight-wm/is-package-maven-plugin</url>
+		<connection>scm:git:https://github.com/farsight-wm/is-package-maven-plugin.git</connection>
+		<developerConnection>scm:git:https://github.com/farsight-wm/is-package-maven-plugin.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>https://opensource.org/licenses/MIT</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Cornelius Wicke</name>
+			<url>https://www.xing.com/profile/Cornelius_Wicke</url>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugin-tools</groupId>
+			<artifactId>maven-plugin-annotations</artifactId>
+			<version>3.6.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-project</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-utils</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
