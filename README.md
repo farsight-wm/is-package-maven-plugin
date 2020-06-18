@@ -1,4 +1,4 @@
-# farsight:is-package-maven-plugin
+# farsight-wm:is-package-maven-plugin
 [![License: MIT](https://img.shields.io/badge/License-MIT-silver.svg)](https://opensource.org/licenses/MIT)
 
 A small maven-plugin assisting in building IS-packages that depend on jar files.
