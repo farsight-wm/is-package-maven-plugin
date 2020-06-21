@@ -3,12 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>farsight-wm</groupId>
+	<parent>
+		<groupId>farsight-wm</groupId>
+		<artifactId>parent</artifactId>
+		<version>10.5.0</version>
+		<relativePath>../parent/pom.xml</relativePath>
+	</parent>
 	<artifactId>is-package-maven-plugin</artifactId>
 
 	<packaging>maven-plugin</packaging>
 
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>farsight-wm:is-package-maven-plugin</name>
 	<description>
 		A maven plugin that helps in building IS packages. 
@@ -42,13 +47,6 @@
 		</developer>
 	</developers>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
-		<maven.compiler.source>${java.version}</maven.compiler.source>
-		<maven.compiler.target>${java.version}</maven.compiler.target>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -70,7 +68,6 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.plexus</groupId>
