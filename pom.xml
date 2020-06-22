@@ -5,9 +5,9 @@
 
 	<parent>
 		<groupId>farsight-wm</groupId>
-		<artifactId>parent</artifactId>
+		<artifactId>wm-parent</artifactId>
 		<version>10.5.0</version>
-		<relativePath>../parent/pom.xml</relativePath>
+		<relativePath>../wm-parent/pom.xml</relativePath>
 	</parent>
 	<artifactId>is-package-maven-plugin</artifactId>
 
@@ -21,7 +21,7 @@
 	<url>https://github.com/farsight-wm/is-package-maven-plugin</url>
 
 	<issueManagement>
-		<url>https://github.com/farsight-wm/parent/is-package-maven-plugin</url>
+		<url>https://github.com/farsight-wm/is-package-maven-plugin/issues</url>
 		<system>GitHub.com</system>
 	</issueManagement>
 
